@@ -1,0 +1,117 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+    <title>Test</title>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="out.js"></script>
+    <script type="text/javascript">
+     /*   var str = window.navigator.appName;
+        println(str);
+
+        var version = navigator.appVersion;
+        println(version);*/
+//     function Person(){
+//         this.name = "牛";
+//         age = 100;
+//         this.eat = function () {//公有方法
+//             alert("吃饭");
+//         }
+//         sleep = function () {
+//             alert("睡觉");
+//         }
+//     }
+//     var p1= new Person();
+//     alert(p1.name);//可以访问
+//     alert(p1.age);//访问不到
+//        p1.eat();
+////        p1.sleep();
+//        Person.gender = "男性";
+//        alert(Person.gender);
+//        Person.study = function () {
+//            alert("学习");
+//        }
+//        Person.study();
+//
+//        function Person2(name,age,gender) {
+//            this.name = name;
+//            this.age = age;
+//            this.gender = gender;
+//        }
+//        var p2 = new Person2("豁然开朗",100,"未知");
+//        alert(p2.name);
+//        alert(p2.age);
+//        alert(p2.gender);
+        //原型 prototype
+//        var str = "                 ab   c      ";
+//        String.prototype.trim = function () {
+//            return this.replace(/(^\s*)|(\s*$)/g,"");
+//        }
+//        alert("|"+str.trim());
+//
+//        var arr1 = new Array(1,2,3,4,5);
+//        for(var i=0; i<arr1.length;i++){
+//            alert(arr1[i]);
+//        }
+//        Array.prototype.getMax = function () {
+//            var max = this[0];
+//            for(var i=1; i<this.length;i++){
+//                if(this[i]>max){
+//                    max = this[i];
+//                }
+//            }
+//            return max;
+//        }
+//        alert(arr1.getMax());
+
+       /* function Person() {
+            this.name = "p1";
+            this.age =19;
+        }
+        function Student() {
+            this.grade = "A";
+        }
+        //模拟继承
+        var p1 = new Person();
+        Student.prototype = p1;
+        var  s1 = new Student();
+        alert(s1.name);
+        alert(s1.grade);
+        */
+
+       //JSON;p实际开发中经常用
+        /*var p1 = {"name":"牛", age:18, gender:'男性'};
+        alert(p1.name);
+        alert(p1.gender);
+        alert(p1.age);*/
+
+       /* var arr1 = ['a','b','c'];
+        for(var i=0;i<arr1.length;i++){
+            alert(arr1[i]);
+        }*/
+       /*var ps = [{"name":"牛",age:18,gender:'男性'},{"name":"学",age:12,gender:'女性'}];
+       alert(ps[0].age);*/
+
+    //with语法
+    /* var p1 = {"name":"牛", age:18, gender:'男性'};
+     alert(p1.name);
+     alert(p1["name"]);
+     alert(p1.gender);
+     alert(p1.age);
+     with(p1){
+         alert(name);
+         alert(gender);
+         alert(age);
+     }
+*/
+    var p1 = {"name":"牛", age:18, gender:'男性'};
+     for(var props in p1){//遍历p1对象 中的所有属性，当前属性名称赋给props变量
+         alert(props +"="+p1[props]);
+     }
+    </script>
+
+</head>
+<body>
+
+
+</body>
+</html>
